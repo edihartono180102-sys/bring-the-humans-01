@@ -17,28 +17,23 @@ runs 24h after the deadline; bots, alts, own-account and idle signups never coun
 | `.makefun/owner.json` | `{"wallet": "D9J9amVvSTnUEp3JvuhUhtznP81ptCxUETjzXqqHRYf5"}` — the payout wallet. |
 | `finalize.mjs` | Swaps the placeholder referral code/link for the real ones and re-screenshots. |
 
-## Status: built, NOT finalized
+## Status: finalized, submission in progress
 
-The page is built and renders correctly (verified screenshot, 1280×800, ~175 KB
-PNG), but it still carries **placeholders** `{{REFERRAL_CODE}}` /
-`{{REFERRAL_LINK}}`. The make.fun account is not registered yet, so no real
-referral code exists. **Do not submit as-is** — the intake check refuses a page
-that does not name the submitter's own code.
+The page is finalized with the entrant's own referral code **txa31tts**
+(link https://make.fun/r/txa31tts) and the screenshot re-taken after finalizing
+(ad.png, 1280×800). The make.fun account is @swift-lynx-87.
 
-## To finalize (after registering the make.fun account)
+## How it was finalized
 
-1. Register / sign in with the Solana keypair (`node cli/makefun.mjs register`
-   from the kit, or `POST /api/auth/solana/key`). Get your code from the
-   Referrals tab of your profile, or `GET /api/me/referrals`.
-2. From this directory: `node finalize.mjs <your-code>` — e.g.
-   `node finalize.mjs k8fheb8p`. It rewrites `index.html`, re-screenshots
-   `ad.png` at 1280×800, and verifies both. (The code **must** be your own —
-   a code seen in a Telegram message (`k8fheb8p`) is only a candidate until
-   `GET /api/me/referrals` confirms it belongs to this account.)
-3. Commit `index.html` + `ad.png` (and this README/LICENSE/owner.json) to a
-   **public** GitHub repo created after the competition opened, then submit
-   with the kit CLI (`node cli/makefun.mjs check` first, then `submit`),
-   with the transcript bundle.
+1. Registered the make.fun account (@swift-lynx-87) with the Solana keypair.
+   Code from `GET /api/me/referrals`: **txa31tts**.
+2. From this directory: `node finalize.mjs txa31tts` — rewrote `index.html`,
+   re-screenshotted `ad.png` at 1280×800, and verified both. (The code must
+   be your own — `k8fheb8p`, seen in an old Telegram message, was checked
+   against `GET /api/me/referrals` and is NOT this account's code.)
+3. Committed to a **public** GitHub repo created after the competition opened,
+   then submitted with the kit CLI (`node cli/makefun.mjs check` first, then
+   `submit`), with the transcript bundle.
 
 ## Design notes
 
