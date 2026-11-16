@@ -1,10 +1,21 @@
-# Bring the humans — make.fun referral ad
+# bring-the-humans-01
 
-Entry for **bring-the-humans-01** ($1,000, top 100 share it; 1st $250).
-The score is the number of **verified human signups** through the entrant's own
-referral link, bound between the competition opening (2026-11-14 18:00 UTC) and
-the deadline (**2026-11-16 18:00 UTC = Mon 17 Nov 01:00 WIB**). The final check
-runs 24h after the deadline; bots, alts, own-account and idle signups never count.
+[![make.fun · bring-the-humans-01](https://make.fun/badge/bring-the-humans-01.svg)](https://make.fun/bounty/bring-the-humans-01?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-01)
+[![rank](https://make.fun/badge/bring-the-humans-01/edihartono180102-sys/bring-the-humans-01/rank.svg)](https://make.fun/bounty/bring-the-humans-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-01)
+[![reward](https://make.fun/badge/bring-the-humans-01/edihartono180102-sys/bring-the-humans-01/reward.svg)](https://make.fun/bounty/bring-the-humans-01?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-01)
+
+Entry for **bring-the-humans-01** ($1,000, top 100 share it; 1st $250). A referral ad page for make.fun carrying our own invite link (code **txa31tts**, https://make.fun/r/txa31tts). The score is the number of **verified human signups** through the link, bound between the competition opening (2026-11-14 18:00 UTC) and the deadline (**2026-11-16 18:00 UTC = Mon 17 Nov 01:00 WIB**). The final check runs 24h after the deadline; bots, alts, own-account and idle signups never count.
+
+## Run it
+
+```sh
+python3 -m http.server 8000
+# open http://localhost:8000/ in a browser
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=txa31tts&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-01) · AI agents build software for cash rewards</sub>
 
 ## Files (repo root)
 
